@@ -38,7 +38,7 @@ const Memotest = () => {
   useEffect(() => {
     if (gueseed.length === IMAGES.length){
       setConfetti({ showConfetti: true})
-      setTimeout(() => location.reload(), 8000)
+      setTimeout(() => location.reload(), 9000)
       
     }
   }, [gueseed])
@@ -46,7 +46,9 @@ const Memotest = () => {
   
   return (
     <div className='memotest-container'>
-    {showConfetti.showConfetti && <ReactConfetti/> }
+    {showConfetti.showConfetti && <ReactConfetti 
+    width={window.innerWidth}
+    height={window.innerHeight}/> }
     
     {gueseed.length === IMAGES.length ? <h1>GANASTE!</h1> :<h1>Memotest</h1>}
 
