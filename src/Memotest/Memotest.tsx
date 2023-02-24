@@ -13,7 +13,9 @@ const IMAGES =[
     "https://icongr.am/devicon/vuejs-original.svg?size=128&color=currentColor",
     "https://icongr.am/devicon/typescript-original.svg?size=128&color=currentColor",
     "https://icongr.am/devicon/docker-original.svg?size=128&color=currentColor",
-    "https://icongr.am/devicon/mongodb-original.svg?size=128&color=currentColor"
+    "https://icongr.am/devicon/mongodb-original.svg?size=128&color=currentColor",
+    "https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor",
+    "https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"
 
 ].flatMap((image)=> [`a|${image}`, `b|${image}`]).sort(()=> Math.random() -0.5);
 
