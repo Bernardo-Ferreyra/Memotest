@@ -1,0 +1,31 @@
+/* .memotest-container{
+    width: 100vw;
+    height: 10vh;
+} */
+
+.memotest--main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 24px;
+    margin: 24px;
+}
+
+.card{
+    padding: 12px;
+    border: 1px solid #666;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #333;
+}
+
+h1{
+    text-align: center;
+    margin: 24px auto;
+    font-size: 36px;
+}
+
+@media(max-width:467px){
+    .memotest--main{
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    }
+}
