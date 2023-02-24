@@ -1,7 +1,6 @@
-/* .memotest-container{
-    width: 100vw;
-    height: 10vh;
-} */
+.memotest-container{
+    height: 100vh;
+}
 
 .memotest--main{
     display: grid;
